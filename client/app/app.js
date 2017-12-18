@@ -19,6 +19,7 @@ import {
 import _Auth from '../components/auth/auth.module';
 import account from './account';
 import admin from './admin';
+import KoalaComponent from './koala/koala.component';
 import navbar from '../components/navbar/navbar.component';
 import footer from '../components/footer/footer.component';
 import main from './main/main.component';
@@ -30,7 +31,7 @@ import './app.css';
 
 angular.module('koalaHollaRefactorApp', [ngCookies, ngResource, ngSanitize, 'btford.socket-io',
   ngRoute, uiBootstrap, _Auth, account, admin, 'validation.match', navbar, footer, main,
-  constants, socket, util
+  constants, socket, util, KoalaComponent
 ])
   .config(routeConfig)
   .run(function($rootScope, $location, Auth) {
